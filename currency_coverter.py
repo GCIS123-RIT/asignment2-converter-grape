@@ -29,14 +29,14 @@ def euro_to_aed(amount):
 
 
 def error_handler(money):
-    arg = None  
+
     try:
         a = int(money)
-        arg = True
+        return True
     
     except:
-        arg = False
-    
+        return False
+   
     
     
         
