@@ -4,7 +4,8 @@ POUNDS_AED = 4.65
 
 
 def aed_to_euro(money):
-    print('x')
+    conv_currency = money * EURO_AED
+    return conv_currency
     
     
 def aed_to_british_pound(money):
@@ -36,10 +37,17 @@ def error_handler(money):
     
     except:
         return False
-   
+       
+def check_negative(money):
     
+    if error_handler(money) is True:
+        if money <1:
+            return False
+        else:
+            return True
     
-        
+    return False 
+                
     
 def menu():
     print("x")
