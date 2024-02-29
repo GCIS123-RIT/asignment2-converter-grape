@@ -50,8 +50,10 @@ def check_negative(money):
                 
     
 def menu():
-    print("x")
+    print(aed_to_euro(5))
 
 def main():
    menu()
+
+main()
     
