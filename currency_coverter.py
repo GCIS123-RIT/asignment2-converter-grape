@@ -113,5 +113,13 @@ def other_to_aed_menu(money): #If user wishes to convert from other currencies t
         print("Invalid choice") #If user enters any number other than 1,2,3
     print("---------------------------------")
 
+def main_menu():
+    print("---------------------------------")
+    print("           Main Menu             ")
+    print("  Welcome to Currency Converter  ")
+    print("---------------------------------")
+    print("  ")
+    print("  ")
+
 
 
