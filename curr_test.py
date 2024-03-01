@@ -17,7 +17,7 @@ def test_error_handeling_False():
 
 def test_negative_False():
     EXPECTED = False
-    actual = currency_coverter.check_negative(-1)
+    actual = currency_coverter.check_negative(-2)
     
     assert EXPECTED == actual
 def test_positive_True():

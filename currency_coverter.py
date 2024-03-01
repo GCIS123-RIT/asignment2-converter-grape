@@ -16,7 +16,6 @@ def aed_to_british_pound(money):
 def aed_to_dollar(money):
     print('x')
     
-    
 def dollar_to_aed(amount):
     print('x')
     
@@ -56,4 +55,3 @@ def main():
    menu()
 
 main()
-    
