@@ -10,44 +10,50 @@ EURO_AED = 3.98     # conversion rate - euro to aed
 DOLLARS_AED = 3.67  # conversion rate - pound to aed
 POUNDS_AED = 4.65   # conversion rate - dollar to aed
 
-"""AED to Euro by dividing amount of money entered by the user with Euro Rate"""
+
 def aed_to_euro(money):
+    """AED to Euro by dividing amount of money entered by the user with Euro Rate"""
     conv_currency = money / EURO_AED
 
     return conv_currency
     
-"""AED to Pound by dividing amount of money entered by the user with Pound Rate"""
+
 def aed_to_british_pound(money):
+    """AED to Pound by dividing amount of money entered by the user with Pound Rate"""
     conv_currency  = money / POUNDS_AED
 
     return conv_currency
     
-"""AED to Dollar by dividing amount of money entered by the user with Dollar Rate"""
+
 def aed_to_dollar(money):
+    """AED to Dollar by dividing amount of money entered by the user with Dollar Rate"""
     conv_currency = money / DOLLARS_AED 
 
     return conv_currency
 
-"""Dollar to AED by multiplying amount of money entered by the user with Dollar Rate"""
-def dollar_to_aed(amount):  
+
+def dollar_to_aed(amount):
+    """Dollar to AED by multiplying amount of money entered by the user with Dollar Rate"""  
     conv_currency = amount * DOLLARS_AED
 
     return conv_currency    
     
-"""Pound to AED by multiplying amount of money entered by the user with Pound Rate"""
+
 def british_pound_to_aed(amount):
+    """Pound to AED by multiplying amount of money entered by the user with Pound Rate"""
     conv_currency = amount * POUNDS_AED
 
     return conv_currency
 
-"""Euro to AED by multiplying amount of money entered by the user with Euro Rate"""    
+   
 def euro_to_aed(amount):
+    """Euro to AED by multiplying amount of money entered by the user with Euro Rate""" 
     conv_currency =  amount * EURO_AED
 
     return conv_currency
 
 def error_handler(money):
-
+    '''This function returns if the input is valid or not'''
     try:
         a = int(money)
         return True
@@ -56,7 +62,7 @@ def error_handler(money):
         return False
        
 def check_negative(money):
-    
+    '''This function checks if the entered value is negative or not'''
     try:
         money_int = int(money)
         if money_int < 1:
@@ -66,8 +72,9 @@ def check_negative(money):
     except ValueError:
         return False
                 
-"""AED to other currencies conversions"""
+
 def aed_to_other_menu(money): #If user wishes to convert from AED to other currencies
+    """AED to other currencies conversions"""
     print("1. AED to Euro (EUR)")
     print("2. AED to British Pound (GBP)")
     print("3. AED to US Dollar")
@@ -91,8 +98,9 @@ def aed_to_other_menu(money): #If user wishes to convert from AED to other curre
     print("---------------------------------")
 
 
-"""Other currencies to AED conversions"""
+
 def other_to_aed_menu(money): #If user wishes to convert from other currencies to AED
+    """Other currencies to AED conversions"""
     print("1. Euro to AED ")
     print("2. British Pound to AED ")
     print("3. US Dollar to AED ")
@@ -164,5 +172,5 @@ def main():
            print("Byee!!!! Thankyou for using this service ")
            break 
        
-if __name__ == "__main__":
-    main()
+
+main()
