@@ -65,11 +65,13 @@ def check_negative(money):
     
     return False 
                 
-    
-def menu():
-    print(aed_to_euro(5))
+"""AED to other currencies conversions"""
+def aed_to_other_menu(money): #If user wishes to convert from AED to other currencies
+    print("1. AED to Euro (EUR)")
+    print("2. AED to British Pound (GBP)")
+    print("3. AED to US Dollar")
 
-def main():
-   menu()
+    target_currency = input("Enter the target currency from the above menu - choice (1/2/3): ") # Asking the user for their choice
+    print("---------------------------------")
+    print("")
 
-main()
