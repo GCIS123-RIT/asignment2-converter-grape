@@ -163,4 +163,6 @@ def main():
            print("Byee!!!! Thankyou for using this service ")
            break 
        
-main()
+if __name__ == "__main__":
+    main()
+    
