@@ -159,3 +159,6 @@ def main():
 
        if another_conversion == "y":
            continue
+       elif another_conversion == "n":
+           print("Byee!!!! Thankyou for using this service ")
+           break 
