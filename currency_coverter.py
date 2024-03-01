@@ -121,5 +121,10 @@ def main_menu():
     print("  ")
     print("  ")
 
+    print("1. AED to other currencies")   #If user wishes to convert from AED to other currencies
+    print("2. Other currencies to AED")   #If user wishes to convert from other currencies to AED
+    print("3. Exit")                      #If user wishes to exit from the converter
+    
+
 
 
