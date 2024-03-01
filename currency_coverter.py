@@ -156,3 +156,6 @@ def main():
     while True:
        main_menu()
        another_conversion = input("Do you want to do another conversion (y/n): ") # Asking the user for their choice
+
+       if another_conversion == "y":
+           continue
