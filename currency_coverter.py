@@ -57,13 +57,14 @@ def error_handler(money):
        
 def check_negative(money):
     
-    if error_handler(money) is True:
-        if money <1:
+    try:
+        money_int = int(money)
+        if money_int < 1:
             return False
         else:
             return True
-    
-    return False 
+    except ValueError:
+        return False
                 
 """AED to other currencies conversions"""
 def aed_to_other_menu(money): #If user wishes to convert from AED to other currencies
@@ -165,4 +166,3 @@ def main():
        
 if __name__ == "__main__":
     main()
-    
