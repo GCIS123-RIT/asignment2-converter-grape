@@ -89,3 +89,10 @@ def aed_to_other_menu(money): #If user wishes to convert from AED to other curre
     
     print("---------------------------------")
 
+
+"""Other currencies to AED conversions"""
+def other_to_aed_menu(money): #If user wishes to convert from other currencies to AED
+    print("1. Euro to AED ")
+    print("2. British Pound to AED ")
+    print("3. US Dollar to AED ")
+
