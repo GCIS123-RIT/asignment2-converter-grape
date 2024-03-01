@@ -138,4 +138,8 @@ def main_menu():
             print("please enter a valid amount or type 'e' to EXIT")
             print(" ")
 
+    convert_choice = int(input("Enter the conversion direction - choice (1/2/3): ")) # Asking the user for their choice
+    print("---------------------------------")
+    print("")
+
 
