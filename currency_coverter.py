@@ -124,7 +124,14 @@ def main_menu():
     print("1. AED to other currencies")   #If user wishes to convert from AED to other currencies
     print("2. Other currencies to AED")   #If user wishes to convert from other currencies to AED
     print("3. Exit")                      #If user wishes to exit from the converter
-    
+
+    while True:
+        money_amount = input("Enter the amount you want to convert: ")   # Asking the user for the amount which they wish to convert.
+        if error_handler(money_amount) == True and check_negative(money_amount) == True:
+            money = int(money_amount)
+            break
+        elif money_amount == "e":
+            sys.exit()
 
 
 
