@@ -4,30 +4,35 @@ POUNDS_AED = 4.65
 
 
 def aed_to_euro(money):
-    conv_currency = money * EURO_AED
+    conv_currency = money / EURO_AED
     return conv_currency
     
     
 def aed_to_british_pound(money):
     conv_currency  = money / POUNDS_AED
+
     return conv_currency
     
     
 def aed_to_dollar(money):
-    conv_currency = money / DOLLARS_AED  
+    conv_currency = money / DOLLARS_AED 
+
     return conv_currency
 
-def dollar_to_aed(amount):
-    print('x')
-    
+def dollar_to_aed(amount):  
+    conv_currency = amount * DOLLARS_AED
+
+    return conv_currency    
     
 def british_pound_to_aed(amount):
-    print('x')
-    
+    conv_currency = amount * POUNDS_AED
+
+    return conv_currency
     
 def euro_to_aed(amount):
-    print('x')
+    conv_currency =  amount * EURO_AED
 
+    return conv_currency
 
 def error_handler(money):
 
