@@ -96,5 +96,9 @@ def other_to_aed_menu(money): #If user wishes to convert from other currencies t
     print("2. British Pound to AED ")
     print("3. US Dollar to AED ")
 
-    
+    target_currency = input("Enter the target currency from the above menu - choice (1/2/3): ") # Asking the user for their choice
+    print("---------------------------------")
+    print(" ")
+
+
 
