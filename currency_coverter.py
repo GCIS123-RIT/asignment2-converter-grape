@@ -133,5 +133,9 @@ def main_menu():
         elif money_amount == "e":
             sys.exit()
 
+        else:
+            print(" ")
+            print("please enter a valid amount or type 'e' to EXIT")
+            print(" ")
 
 
