@@ -142,4 +142,16 @@ def main_menu():
     print("---------------------------------")
     print("")
 
+    if convert_choice == 1: #If user wants to convert AED to other currencies
+        aed_to_other_menu(money) 
+    elif convert_choice == 2: #If user wants to convert amount to AED
+        other_to_aed_menu(money)
+    elif convert_choice == 3: #If the user wants to exit the converter
+        print("Byee!!!! Thankyou for using this service ")
+        sys.exit()
+    else:
+        print("invalid choice") #If user enters anything other than 1,2,3
 
+def main():
+    while True:
+       main_menu()
