@@ -75,3 +75,17 @@ def aed_to_other_menu(money): #If user wishes to convert from AED to other curre
     print("---------------------------------")
     print("")
 
+    if target_currency == "1":  
+        converted_amount = aed_to_euro(money) #converting AED to Euro
+        print(str(money) + " AED is equal to " + str(converted_amount) + " EUR")
+    elif target_currency == "2":
+        converted_amount = aed_to_british_pound(money) #converting AED to Pound
+        print(str(money) + " AED is equal to " + str(converted_amount) + " GBP")
+    elif target_currency == "3":
+        converted_amount = aed_to_dollar(money) #converting AED to Dollar
+        print(str(money) + " AED is equal to " + str(converted_amount) + " USD")
+    else:
+        print("Invalid Choice") #If user enters any number other than 1,2,3
+    
+    print("---------------------------------")
+
