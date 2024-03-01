@@ -9,13 +9,14 @@ def aed_to_euro(money):
     
     
 def aed_to_british_pound(money):
-    print('x')
-    
+    conv_currency  = money / POUNDS_AED
+    return conv_currency
     
     
 def aed_to_dollar(money):
-    print('x')
-    
+    conv_currency = money / DOLLARS_AED  
+    return conv_currency
+
 def dollar_to_aed(amount):
     print('x')
     
